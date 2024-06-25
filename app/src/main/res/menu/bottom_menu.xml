@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/moveToFirst"
+        android:id="@+id/moveToFirst"
+        android:icon="@drawable/baseline_arrow_circle_right_24"/>
+    <item android:title="@string/moveToSecond"
+        android:id="@+id/moveToSecond"
+        android:icon="@drawable/baseline_arrow_circle_right_24"/>
+    <item android:title="@string/moveToThird"
+        android:id="@+id/moveToThird"
+        android:icon="@drawable/baseline_arrow_circle_right_24"/>
+</menu>

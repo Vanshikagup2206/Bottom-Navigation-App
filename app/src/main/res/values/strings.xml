@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BottomNavigationApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moveToFirst">Move To First</string>
+    <string name="moveToSecond">Move To Second</string>
+    <string name="moveToThird">Move To Third</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="sp_20">20sp\n</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fraagment</string>
+</resources>
