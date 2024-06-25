@@ -22,6 +22,7 @@ class ThirdFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     var binding : FragmentThirdBinding ?= null
+    var mainActivity: MainActivity? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,10 +40,6 @@ class ThirdFragment : Fragment() {
         binding = FragmentThirdBinding.inflate(inflater)
         return binding?.root
 //        return inflater.inflate(R.layout.fragment_third, container, false)
-    }
-
-    override fun onResume() {
-        super.onResume()
     }
 
     companion object {

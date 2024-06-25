@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.host)
         binding?.bottomNav?.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.firstFragment-> navController?.navigate(R.id.firstFragment)
-                R.id.secondFragment-> navController?.navigate(R.id.secondFragment)
-                R.id.thirdFragment-> navController?.navigate(R.id.thirdFragment)
+                R.id.moveToFirst-> navController?.navigate(R.id.firstFragment)
+                R.id.moveToSecond-> navController?.navigate(R.id.secondFragment)
+                R.id.moveToThird-> navController?.navigate(R.id.thirdFragment)
             }
             return@setOnItemSelectedListener true
         }
