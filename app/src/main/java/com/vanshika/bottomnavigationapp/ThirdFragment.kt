@@ -22,11 +22,9 @@ class ThirdFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     var binding : FragmentThirdBinding ?= null
-    var thirdFragment : ThirdFragment ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        thirdFragment = activity as ThirdFragment
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -45,7 +43,6 @@ class ThirdFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        thirdFragment = activity as ThirdFragment
     }
 
     companion object {

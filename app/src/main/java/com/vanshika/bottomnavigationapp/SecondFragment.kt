@@ -22,11 +22,9 @@ class SecondFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     var binding : FragmentSecondBinding ?= null
-    var secondFragment : SecondFragment ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        secondFragment = activity as SecondFragment
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -45,7 +43,6 @@ class SecondFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        secondFragment = activity as SecondFragment
     }
 
     companion object {
