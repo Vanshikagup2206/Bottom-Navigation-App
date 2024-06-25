@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
+import androidx.navigation.fragment.findNavController
 import com.vanshika.bottomnavigationapp.databinding.FragmentSecondBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,6 +39,12 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val callback = object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                findNavController().navigate(R.id.action_secondFragment_to_firstFragment)
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,callback)
         binding = FragmentSecondBinding.inflate(inflater)
         return binding?.root
 //        return inflater.inflate(R.layout.fragment_second, container, false)

@@ -2,6 +2,7 @@ package com.vanshika.bottomnavigationapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.vanshika.bottomnavigationapp.databinding.ActivityMainBinding
