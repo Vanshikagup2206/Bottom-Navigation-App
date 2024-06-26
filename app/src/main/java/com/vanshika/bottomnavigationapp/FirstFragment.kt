@@ -21,8 +21,8 @@ class FirstFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    var binding : FragmentFirstBinding ?= null
-    var mainActivity : MainActivity ?= null
+    var binding: FragmentFirstBinding? = null
+    var mainActivity: MainActivity? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
