@@ -23,5 +23,21 @@ class MainActivity : AppCompatActivity() {
             }
             return@setOnItemSelectedListener true
         }
+        navController?.addOnDestinationChangedListener{navController,destination, arguments->
+            when(destination.id){
+                R.id.firstFragment-> {
+                    supportActionBar?.title = resources.getString(R.string.first_fragment)
+                    binding?.bottomNav?.menu?.findItem(R.id.moveToFirst)?.isChecked = true
+                }
+                R.id.secondFragment-> {
+                    supportActionBar?.title = resources.getString(R.string.second_fragment)
+                    binding?.bottomNav?.menu?.findItem(R.id.moveToSecond)?.isChecked = true
+                }
+                R.id.thirdFragment-> {
+                    supportActionBar?.title = resources.getString(R.string.third_fragment)
+                    binding?.bottomNav?.menu?.findItem(R.id.moveToThird)?.isChecked = true
+                }
+            }
+        }
     }
 }

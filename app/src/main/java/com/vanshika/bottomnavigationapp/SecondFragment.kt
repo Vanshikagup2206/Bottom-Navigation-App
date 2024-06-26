@@ -39,12 +39,6 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val callback = object : OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.action_secondFragment_to_firstFragment)
-            }
-        }
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,callback)
         binding = FragmentSecondBinding.inflate(inflater)
         return binding?.root
 //        return inflater.inflate(R.layout.fragment_second, container, false)

@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/third_fragment"
-        android:textSize="@string/sp_20"
+        android:textSize="@dimen/sp_20"
         android:id="@+id/tvThirdFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
